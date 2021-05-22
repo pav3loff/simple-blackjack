@@ -1,0 +1,107 @@
+.body {
+  background-color: rgb(46, 46, 46);
+}
+
+.main-container {
+  min-width: 450px;
+  margin: 0;
+  text-align: center;
+}
+
+.title-container {
+}
+
+.title {
+  font-family: "Bebas Neue";
+  font-size: 500%;
+  color: rgb(240, 240, 240);
+}
+
+.game-main-container {
+}
+
+.boards-container {
+}
+
+.player-board-container,
+.computer-board-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  background-color: transparent;
+  border: 3px solid rgb(240, 240, 240);
+  border-radius: 10px;
+  min-width: 200px;
+  height: 270px;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-board-container img,
+.computer-board-container img {
+  background-color: rgb(240, 240, 240);
+  border: 2px solid rgb(240, 240, 240);
+  border-radius: 5px;
+  width: 80px;
+  height: 100px;
+  padding: 10px;
+  margin: 5px;
+  animation: fade-in 0.5s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.buttons-container {
+  margin: 10px;
+}
+
+.buttons-container button {
+  margin: 10px;
+  width: 100px;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  transition-duration: 0.4s;
+  border: none;
+}
+
+.buttons-container button:hover:enabled {
+  color: rgb(240, 240, 240);
+  background-color: rgb(46, 46, 46);
+  cursor: pointer;
+  margin: 10px;
+  width: 100px;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  border: none;
+}
+
+.buttons-container button:active {
+  color: rgb(240, 240, 240);
+  background-color: rgb(46, 46, 46);
+  cursor: pointer;
+  margin: 10px;
+  width: 100px;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  border: none;
+  transform: translateY(4px);
+}
+
+.buttons-container button:disabled {
+  cursor: auto;
+  animation: fade-in 1s;
+}
+
+.result-container h2 {
+  font-family: "Bebas Neue";
+  font-size: 300%;
+  color: rgb(240, 240, 240);
+  animation: fade-in 1s;
+}

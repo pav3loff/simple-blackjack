@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <div id="main-container" class="main-container">
+        <div id="title-container" class="title-container">
+            <h1 id="title" class="title">BLACK JACK</h1>
+        </div>
+
+        <div id="game-main-container" class="game-main-container">
+            <div id="boards-container" class="boards-container">
+                <div id="player-board-container" class="player-board-container">
+
+                </div>
+    
+                <div id="computer-board-container" class="computer-board-container">
+    
+                </div>
+            </div>
+
+            <div id="buttons-container" class="buttons-container">
+                <button id="button-hit" onclick="hit()">Hit</button>
+                <button id="button-stand" onclick="stand()">Stand</button>
+                <button onclick="newGame()">New Game</button>
+            </div>
+
+            <div id="result-container" class="result-container">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/gameLogic.js"></script>
+</body>
+</html>
